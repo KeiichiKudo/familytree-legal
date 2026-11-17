@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ファミリーツリー プライバシーポリシー｜株式会社ブリッジ">
+<title>ファミリーツリー プライバシーポリシー</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600&display=swap">
+<style>
+  /* レイアウト：1カラムの条文。左に条番号を置き、本文は約40字で折り返す */
+  :root {
+    --bg:      #fdfaf5;
+    --surface: #ffffff;
+    --fg:      #2e2a24;
+    --muted:   #6f6659;
+    --accent:  #4f8c64;
+    --rule:    #e7dfd2;
+    --mark:    #f2f7f0;
+    --serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+    --sans:  "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:      #1c1a17;
+      --surface: #252220;
+      --fg:      #ece6dc;
+      --muted:   #a79c8c;
+      --accent:  #8cc79f;
+      --rule:    #3a352e;
+      --mark:    #222a23;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:      #1c1a17;
+    --surface: #252220;
+    --fg:      #ece6dc;
+    --muted:   #a79c8c;
+    --accent:  #8cc79f;
+    --rule:    #3a352e;
+    --mark:    #222a23;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.95;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 44rem;
+    margin-inline: auto;
+    padding-block: 3.5rem 5rem;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  header { border-bottom: 2px solid var(--fg); padding-bottom: 1.5rem; }
+  .eyebrow {
+    font-size: .74rem; letter-spacing: .18em; color: var(--accent);
+    font-weight: 700; margin: 0 0 .7rem;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(1.6rem, 5vw, 2.1rem); line-height: 1.5;
+    margin: 0; text-wrap: balance;
+  }
+  .lede { color: var(--muted); margin: 1rem 0 0; font-size: .92rem; }
+
+  dl.meta {
+    display: grid; grid-template-columns: auto 1fr; gap: .35rem 1.4rem;
+    margin: 1.6rem 0 0; font-size: .86rem;
+  }
+  dl.meta dt { color: var(--muted); white-space: nowrap; }
+  dl.meta dd { margin: 0; min-width: 0; word-break: break-word; }
+
+  section { margin-top: 2.9rem; }
+  h2 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: 1.12rem; line-height: 1.6;
+    margin: 0 0 .9rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+    display: flex; gap: .8rem; align-items: baseline;
+  }
+  h2 .num {
+    font-family: var(--sans); font-size: .78rem; font-weight: 700;
+    color: var(--accent); font-variant-numeric: tabular-nums;
+  }
+  h3 {
+    font-size: .92rem; font-weight: 700; margin: 1.5rem 0 .4rem;
+    color: var(--fg);
+  }
+  p { margin: 0 0 .9rem; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 .9rem; padding-left: 1.2rem; }
+  li { margin-bottom: .3rem; }
+  li::marker { color: var(--accent); }
+
+  .note {
+    background: var(--mark);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.1rem;
+    margin: 1.1rem 0;
+    font-size: .92rem;
+  }
+  .note strong { color: var(--accent); }
+
+  table {
+    width: 100%; border-collapse: collapse; margin: .9rem 0;
+    font-size: .88rem;
+  }
+  .scroll { overflow-x: auto; }
+  th, td {
+    text-align: left; vertical-align: top;
+    padding: .6rem .8rem; border-bottom: 1px solid var(--rule);
+  }
+  th { color: var(--muted); font-weight: 500; white-space: nowrap; }
+
+  .mail {
+    font-family: var(--sans); font-weight: 700; color: var(--accent);
+    user-select: all; word-break: break-all;
+  }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.3rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .84rem;
+  }
+</style>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">PRIVACY POLICY</p>
+    <h1>ファミリーツリー<br>プライバシーポリシー</h1>
+    <p class="lede">
+      株式会社ブリッジ（以下「当社」）は、当社が提供するアプリケーション「ファミリーツリー」（以下「本アプリ」）において、
+      利用者およびそのご家族の個人情報を取り扱います。本ポリシーは、その取扱いについて定めるものです。
+    </p>
+    <dl class="meta">
+      <dt>事業者</dt><dd>株式会社ブリッジ</dd>
+      <dt>お問い合わせ</dt><dd><span class="mail">office@bridge-online.net</span></dd>
+      <dt>制定日</dt><dd>2026年11月17日</dd>
+    </dl>
+  </header>
+
+  <section>
+    <h2><span class="num">01</span>取得する情報</h2>
+    <p>本アプリは、次の情報を取得します。</p>
+
+    <h3>アカウント情報</h3>
+    <ul>
+      <li>メールアドレス</li>
+      <li>パスワード（暗号化して保管し、当社が内容を知ることはできません）</li>
+    </ul>
+
+    <h3>利用者ご本人のプロフィール</h3>
+    <ul>
+      <li>氏名、ふりがな</li>
+      <li>生年月日、出身地</li>
+      <li>趣味、ひとことメッセージ</li>
+      <li>プロフィール写真</li>
+    </ul>
+
+    <h3>利用者が登録するご家族の情報</h3>
+    <p>本アプリでは、利用者がご家族（本アプリを利用していない方、故人を含みます）の情報を登録できます。</p>
+    <ul>
+      <li>氏名、ふりがな、性別</li>
+      <li>生年月日、命日</li>
+      <li>家系図上の続柄（父母・配偶者などのつながり）</li>
+      <li>顔写真</li>
+      <li>学校、学年、趣味、出身地、ひとことメッセージ</li>
+    </ul>
+
+    <h3>本アプリの利用により生じる情報</h3>
+    <ul>
+      <li>ご家族間でやりとりする手紙の件名・本文、および送信予約日時</li>
+      <li>記念日・ライフイベントとして登録された内容</li>
+      <li>手書きの家系図を撮影・選択した画像</li>
+    </ul>
+
+    <h3>端末の機能へのアクセス</h3>
+    <p>
+      写真の登録および手書き家系図の取り込みのため、カメラおよび写真ライブラリへのアクセスを求めることがあります。
+      取得するのは利用者が選択した画像のみで、ライブラリ全体を読み取ることはありません。
+      アクセスは端末の設定からいつでも停止できます。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>利用目的</h2>
+    <p>取得した情報は、次の目的のためにのみ利用します。</p>
+    <ul>
+      <li>家系図の作成・表示・続柄の算出</li>
+      <li>ご家族間の手紙の送受信および予約送信</li>
+      <li>記念日・年忌などのお知らせ通知</li>
+      <li>利用者からのお問い合わせへの対応</li>
+      <li>本アプリの不具合対応および安全性の確保</li>
+    </ul>
+    <p>当社は、取得した情報を広告配信や行動分析の目的で利用することはありません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>ご家族の情報の取扱い</h2>
+    <div class="note">
+      <p>
+        <strong>ご本人の同意を得たうえでご登録ください。</strong>
+        本アプリでは、利用者がご自身以外の方の氏名・生年月日・顔写真などを登録できます。
+        これらの情報を登録する場合、あらかじめご本人の同意を得る責任は、登録を行う利用者にあります。
+      </p>
+      <p style="margin-bottom:0">
+        ご登録された方ご本人から削除のご希望があった場合は、登録を行った利用者が本アプリ上で削除してください。
+        ご本人から当社へ直接お申し出いただいた場合は、当社が確認のうえ対応いたします。
+      </p>
+    </div>
+    <p>
+      ご家族の情報は、同じ家系図に参加している方に表示されます。
+      公開範囲は、利用者が本アプリの「公開範囲・プライバシー」設定で変更できます。
+      氏名のみの公開、写真の非表示、手紙の受け取り拒否をそれぞれ設定できます。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>第三者への提供</h2>
+    <p>
+      当社は、次の場合を除き、取得した情報を第三者に提供しません。
+    </p>
+    <ul>
+      <li>ご本人の同意がある場合</li>
+      <li>法令に基づく場合</li>
+      <li>人の生命、身体または財産の保護のために必要があり、ご本人の同意を得ることが困難な場合</li>
+    </ul>
+    <p>当社が情報を販売することはありません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>保存先と委託</h2>
+    <p>
+      当社は、本アプリのデータ保管のためにクラウドサービス「Supabase」を利用しています。
+      データは<strong>日本国内（東京）のサーバー</strong>に保管されており、国外への移転は行っていません。
+    </p>
+    <div class="scroll">
+      <table>
+        <tr><th>保管するもの</th><td>アカウント情報、プロフィール、家系図データ、手紙、写真</td></tr>
+        <tr><th>保管場所</th><td>日本国内（東京リージョン）</td></tr>
+        <tr><th>委託先の監督</th><td>当社は委託先に対し、安全管理が図られるよう必要かつ適切な監督を行います</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>安全管理措置</h2>
+    <ul>
+      <li>通信はすべて暗号化（HTTPS）しています。</li>
+      <li>データベースには行単位のアクセス制御を設定し、利用者はご自身が関係する家系図のデータにのみアクセスできます。</li>
+      <li>パスワードは暗号化して保管し、当社が内容を知ることはできません。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>通知機能</h2>
+    <p>
+      記念日や年忌のお知らせは、端末内で処理されるローカル通知です。
+      通知のために当社のサーバーへ情報を送信することはありません。
+      通知は端末の設定からいつでも停止できます。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>送金機能について</h2>
+    <p>
+      本アプリには、手紙にお祝い金を添えるための導線として、外部アプリ「PayPay」を起動する機能があります。
+      送金手続きはPayPayアプリ内で完結し、<strong>当社が金額、残高、クレジットカード情報、その他の決済情報を取得・保管することはありません</strong>。
+      PayPayにおける個人情報の取扱いは、PayPay株式会社の定めによります。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>アクセス解析・広告</h2>
+    <p>
+      本アプリは、アクセス解析ツールおよび広告配信サービスを一切使用していません。
+      利用者の行動履歴を収集することはなく、広告識別子（IDFA）も取得しません。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span>保存期間とアカウントの削除</h2>
+    <p>
+      取得した情報は、アカウントが存続する間保管します。
+      利用者は、本アプリの「マイページ」からいつでもアカウントを削除できます。
+    </p>
+    <p>削除を実行すると、次の情報がサーバーから消去されます。</p>
+    <ul>
+      <li>作成した家系図と、そこに登録されたご家族の情報</li>
+      <li>送受信した手紙</li>
+      <li>アップロードした写真</li>
+      <li>プロフィールおよびアカウント情報</li>
+    </ul>
+    <p>削除した情報を復元することはできません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">11</span>開示・訂正・利用停止のご請求</h2>
+    <p>
+      ご自身の個人情報について、開示、訂正、追加、削除、利用停止をご請求いただけます。
+      ご本人以外の方として登録された情報についても、ご本人からのお申し出を受け付けます。
+    </p>
+    <p>
+      ご請求は下記の窓口へご連絡ください。ご本人であることを確認させていただいたうえで、
+      法令に従い対応いたします。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">12</span>未成年の方の利用</h2>
+    <p>
+      未成年の方が本アプリを利用される場合は、保護者の方の同意を得たうえでご利用ください。
+      また、未成年のご家族の情報を登録する場合は、保護者の方の同意を得てください。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">13</span>本ポリシーの変更</h2>
+    <p>
+      法令の改正や本アプリの機能変更に伴い、本ポリシーを変更することがあります。
+      重要な変更を行う場合は、本アプリ内または当社ウェブサイトでお知らせします。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">14</span>お問い合わせ</h2>
+    <p>本ポリシーおよび個人情報の取扱いに関するお問い合わせは、下記までご連絡ください。</p>
+    <dl class="meta">
+      <dt>事業者</dt><dd>株式会社ブリッジ</dd>
+      <dt>メール</dt><dd><span class="mail">office@bridge-online.net</span></dd>
+    </dl>
+  </section>
+
+  <footer>
+    <p style="margin:0">制定日：2026年11月17日　／　株式会社ブリッジ</p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ファミリーツリー 利用規約｜株式会社ブリッジ">
+<title>ファミリーツリー 利用規約</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600&display=swap">
+<style>
+  /* レイアウト：1カラムの条文。条番号を見出し左に置き、本文は約40字で折り返す */
+  :root {
+    --bg:      #fdfaf5;
+    --surface: #ffffff;
+    --fg:      #2e2a24;
+    --muted:   #6f6659;
+    --accent:  #4f8c64;
+    --rule:    #e7dfd2;
+    --mark:    #f2f7f0;
+    --serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+    --sans:  "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:      #1c1a17;
+      --surface: #252220;
+      --fg:      #ece6dc;
+      --muted:   #a79c8c;
+      --accent:  #8cc79f;
+      --rule:    #3a352e;
+      --mark:    #222a23;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:      #1c1a17;
+    --surface: #252220;
+    --fg:      #ece6dc;
+    --muted:   #a79c8c;
+    --accent:  #8cc79f;
+    --rule:    #3a352e;
+    --mark:    #222a23;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.95;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 44rem;
+    margin-inline: auto;
+    padding-block: 3.5rem 5rem;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  header { border-bottom: 2px solid var(--fg); padding-bottom: 1.5rem; }
+  .eyebrow {
+    font-size: .74rem; letter-spacing: .18em; color: var(--accent);
+    font-weight: 700; margin: 0 0 .7rem;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(1.6rem, 5vw, 2.1rem); line-height: 1.5;
+    margin: 0; text-wrap: balance;
+  }
+  .lede { color: var(--muted); margin: 1rem 0 0; font-size: .92rem; }
+
+  dl.meta {
+    display: grid; grid-template-columns: auto 1fr; gap: .35rem 1.4rem;
+    margin: 1.6rem 0 0; font-size: .86rem;
+  }
+  dl.meta dt { color: var(--muted); white-space: nowrap; }
+  dl.meta dd { margin: 0; min-width: 0; word-break: break-word; }
+
+  section { margin-top: 2.6rem; }
+  h2 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: 1.1rem; line-height: 1.6;
+    margin: 0 0 .9rem; padding-bottom: .5rem;
+    border-bottom: 1px solid var(--rule);
+    display: flex; gap: .8rem; align-items: baseline;
+  }
+  h2 .num {
+    font-family: var(--sans); font-size: .76rem; font-weight: 700;
+    color: var(--accent); white-space: nowrap;
+  }
+  p { margin: 0 0 .9rem; }
+  p:last-child { margin-bottom: 0; }
+
+  ol.items { margin: 0 0 .9rem; padding-left: 1.4rem; }
+  ol.items > li { margin-bottom: .45rem; }
+  ol.items > li::marker { color: var(--muted); font-size: .88em; }
+  ul { margin: .4rem 0 .9rem; padding-left: 1.2rem; }
+  ul li { margin-bottom: .25rem; }
+  ul li::marker { color: var(--accent); }
+
+  .note {
+    background: var(--mark);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.1rem;
+    margin: 1.1rem 0;
+    font-size: .92rem;
+  }
+  .note strong { color: var(--accent); }
+
+  .mail {
+    font-weight: 700; color: var(--accent);
+    user-select: all; word-break: break-all;
+  }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.3rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .84rem;
+  }
+</style>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">TERMS OF SERVICE</p>
+    <h1>ファミリーツリー<br>利用規約</h1>
+    <p class="lede">
+      本規約は、株式会社ブリッジ（以下「当社」）が提供するアプリケーション「ファミリーツリー」（以下「本アプリ」）の
+      利用条件を定めるものです。本アプリをご利用になる方（以下「利用者」）は、本規約に同意したうえでご利用ください。
+    </p>
+    <dl class="meta">
+      <dt>事業者</dt><dd>株式会社ブリッジ</dd>
+      <dt>お問い合わせ</dt><dd><span class="mail">office@bridge-online.net</span></dd>
+      <dt>制定日</dt><dd>2026年11月17日</dd>
+    </dl>
+  </header>
+
+  <section>
+    <h2><span class="num">第1条</span>適用</h2>
+    <ol class="items">
+      <li>本規約は、本アプリの利用に関する当社と利用者との間の一切の関係に適用されます。</li>
+      <li>当社が本アプリ内で別途定める案内や注意書きは、本規約の一部を構成します。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="num">第2条</span>アカウント</h2>
+    <ol class="items">
+      <li>本アプリの利用には、メールアドレスとパスワードによるアカウント登録が必要です。</li>
+      <li>利用者は、登録情報を正確に登録し、変更があった場合は速やかに更新するものとします。</li>
+      <li>パスワードの管理は利用者の責任において行うものとし、第三者に貸与・譲渡することはできません。</li>
+      <li>アカウントを通じて行われた行為は、当該アカウントの利用者による行為とみなします。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="num">第3条</span>ご家族の情報の登録</h2>
+    <div class="note">
+      <p style="margin-bottom:0">
+        <strong>本条は本アプリの性質上、特に重要な定めです。</strong>
+        本アプリでは、利用者がご自身以外の方の氏名、生年月日、顔写真などを登録できます。
+      </p>
+    </div>
+    <ol class="items">
+      <li>利用者は、ご家族その他の第三者の情報を登録する場合、あらかじめご本人の同意を得るものとします。同意の取得は利用者の責任において行うものとします。</li>
+      <li>故人の情報を登録する場合、利用者はご遺族の意向を尊重するものとします。</li>
+      <li>登録された方ご本人またはご遺族から削除の申し出があった場合、利用者は速やかに本アプリ上で当該情報を削除するものとします。</li>
+      <li>当社がご本人から直接お申し出を受けた場合、当社は確認のうえ、当該情報を削除することがあります。</li>
+      <li>第三者の情報の登録に起因して紛争が生じた場合、利用者の責任と費用において解決するものとし、当社は責任を負いません。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="num">第4条</span>禁止事項</h2>
+    <p>利用者は、本アプリの利用にあたり、次の行為を行ってはなりません。</p>
+    <ul>
+      <li>法令または公序良俗に違反する行為</li>
+      <li>他人になりすまして登録または利用する行為</li>
+      <li>ご本人の同意なく第三者の情報を登録する行為</li>
+      <li>他の利用者を誹謗中傷し、または不快にさせる内容を送信する行為</li>
+      <li>本アプリの運営を妨害する行為、不正アクセスを試みる行為</li>
+      <li>本アプリを商業目的で無断利用する行為</li>
+      <li>その他、当社が不適切と判断する行為</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">第5条</span>投稿内容の取扱い</h2>
+    <ol class="items">
+      <li>利用者が登録した家系図、手紙、写真その他の内容（以下「投稿内容」）の権利は、利用者または正当な権利者に帰属します。</li>
+      <li>当社は、本アプリの提供に必要な範囲でのみ投稿内容を取り扱います。宣伝、広告その他の目的で利用することはありません。</li>
+      <li>投稿内容について第三者との間で紛争が生じた場合、利用者の責任と費用において解決するものとします。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="num">第6条</span>家系図の内容について</h2>
+    <p>
+      本アプリに表示される家系図および続柄は、利用者が入力した情報に基づいて作成・算出されるものです。
+      <strong>戸籍その他の公的な証明に代わるものではありません。</strong>
+      相続手続その他の法的手続において本アプリの表示を根拠として用いることはできません。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">第7条</span>送金機能について</h2>
+    <ol class="items">
+      <li>本アプリには、手紙にお祝い金を添えるための導線として、外部サービス「PayPay」を起動する機能があります。</li>
+      <li>送金手続きはPayPayアプリ内で行われます。当社は送金の当事者ではなく、資金の授受に一切関与しません。</li>
+      <li>送金に関する条件は、PayPay株式会社の定める規約によります。</li>
+      <li>送金に関して利用者間または利用者とPayPay株式会社との間で生じた紛争について、当社は責任を負いません。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="num">第8条</span>サービスの変更・中断・終了</h2>
+    <ol class="items">
+      <li>当社は、利用者への事前の通知なく、本アプリの内容を変更し、または提供を中断することがあります。</li>
+      <li>本アプリの提供を終了する場合、当社は相当な期間をもって利用者に通知するものとします。</li>
+      <li>変更、中断または終了により利用者に生じた損害について、当社は責任を負いません。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="num">第9条</span>免責</h2>
+    <ol class="items">
+      <li>当社は、本アプリに事実上または法律上の瑕疵がないことを保証するものではありません。</li>
+      <li>通信障害、システム障害その他の事由によりデータが消失した場合について、当社は責任を負いません。重要な情報は利用者ご自身でも保管してください。</li>
+      <li>当社が責任を負う場合であっても、当社に故意または重過失がある場合を除き、損害賠償の範囲は通常生ずべき直接かつ現実の損害に限られます。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="num">第10条</span>退会</h2>
+    <ol class="items">
+      <li>利用者は、本アプリの「マイページ」からいつでもアカウントを削除し、退会することができます。</li>
+      <li>退会すると、作成した家系図、登録したご家族の情報、手紙、写真はすべて消去され、復元することはできません。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="num">第11条</span>利用停止</h2>
+    <p>
+      当社は、利用者が本規約に違反したと判断した場合、事前の通知なく、本アプリの利用を停止し、
+      またはアカウントを削除することがあります。これにより利用者に生じた損害について、当社は責任を負いません。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">第12条</span>個人情報の取扱い</h2>
+    <p>
+      個人情報の取扱いについては、別途定める「ファミリーツリー プライバシーポリシー」によります。
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">第13条</span>本規約の変更</h2>
+    <ol class="items">
+      <li>当社は、必要と判断した場合、本規約を変更することがあります。</li>
+      <li>変更後の規約は、本アプリ内または当社ウェブサイトに掲載した時点から効力を生じます。</li>
+      <li>重要な変更を行う場合、当社は相当な方法により利用者に通知します。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="num">第14条</span>準拠法および管轄</h2>
+    <ol class="items">
+      <li>本規約の解釈および適用は、日本法に準拠します。</li>
+      <li>本アプリに関して紛争が生じた場合、当社の本店所在地を管轄する地方裁判所を第一審の専属的合意管轄裁判所とします。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="num">第15条</span>お問い合わせ</h2>
+    <p>本規約に関するお問い合わせは、下記までご連絡ください。</p>
+    <dl class="meta">
+      <dt>事業者</dt><dd>株式会社ブリッジ</dd>
+      <dt>メール</dt><dd><span class="mail">office@bridge-online.net</span></dd>
+    </dl>
+  </section>
+
+  <footer>
+    <p style="margin:0">制定日：2026年11月17日　／　株式会社ブリッジ</p>
+  </footer>
+</div>
+</body>
+</html>
